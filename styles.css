@@ -157,40 +157,58 @@ body::before {
 }
 
 .lang-switcher {
-  display: inline-flex;
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
   align-items: center;
-  gap: 8px;
-}
-
-.lang-button {
-  min-height: 36px;
-  padding: 0 12px;
+  padding: 4px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.lang-switcher::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd1ad 0%, #ea6b20 100%);
+  box-shadow: 0 10px 24px rgba(234, 107, 32, 0.35);
+  transition: transform 220ms ease;
+}
+
+.lang-switcher[data-active-lang="uk"]::before {
+  transform: translateX(100%);
+}
+
+.lang-option {
+  position: relative;
+  z-index: 1;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  transition:
-    color 180ms ease,
-    border-color 180ms ease,
-    background 180ms ease,
-    transform 180ms ease;
+  transition: color 180ms ease;
 }
 
-.lang-button:hover,
-.lang-button:focus-visible {
+.lang-option:hover,
+.lang-option:focus-visible {
   color: var(--text);
-  transform: translateY(-1px);
 }
 
-.lang-button.is-active {
+.lang-option.is-active {
   color: #1a120d;
-  border-color: transparent;
-  background: linear-gradient(135deg, #ffd1ad 0%, #ea6b20 100%);
 }
 
 .hero,
