@@ -79,10 +79,6 @@ const translations = {
     pageTitle: "Gnarled Vole | 3D Assets for Unity",
     metaDescription:
       "Gnarled Vole creates stylized 3D assets for Unity Asset Store publishers and developers.",
-    brandAria: "Gnarled Vole homepage",
-    brandKicker: "Unity Asset Studio",
-    navAria: "Primary navigation",
-    langSwitcherAria: "Language switcher",
     navAbout: "About",
     navKits: "Asset Kits",
     navWorkflow: "Workflow",
@@ -102,10 +98,8 @@ const translations = {
     surfaceTopLabel: "Current status",
     surfaceTopTitle: "First Asset Store pack is now in active development.",
     surfaceBottomLabel: "In progress",
-    chipAria: "Pack status chips",
     chipPackName: "Pirate Island Pack",
     chipWip: "WIP",
-    heroStatsAria: "Studio highlights",
     aboutEyebrow: "About the studio",
     aboutTitle: "Simple studio page, focused on what actually exists today.",
     aboutCard1Title: "What it is",
@@ -140,10 +134,6 @@ const translations = {
     pageTitle: "Gnarled Vole | 3D-асети для Unity",
     metaDescription:
       "Gnarled Vole створює стилізовані 3D-асети для видавців і розробників Unity Asset Store.",
-    brandAria: "Головна сторінка Gnarled Vole",
-    brandKicker: "Студія асетів Unity",
-    navAria: "Основна навігація",
-    langSwitcherAria: "Перемикач мови",
     navAbout: "Про студію",
     navKits: "Паки",
     navWorkflow: "Фокус",
@@ -163,10 +153,8 @@ const translations = {
     surfaceTopLabel: "Поточний стан",
     surfaceTopTitle: "Перший пак для Asset Store зараз в активній розробці.",
     surfaceBottomLabel: "У процесі",
-    chipAria: "Чіпи статусу паку",
     chipPackName: "Pirate Island Pack",
     chipWip: "WIP",
-    heroStatsAria: "Ключові факти про студію",
     aboutEyebrow: "Про студію",
     aboutTitle: "Проста сторінка студії, з фокусом на тому, що реально існує зараз.",
     aboutCard1Title: "Що це",
@@ -198,9 +186,8 @@ const translations = {
   },
 };
 
-const languageButtons = document.querySelectorAll(".lang-option");
-const languageSwitcher = document.querySelector(".lang-switcher");
-const textTargets = document.querySelectorAll("[data-i18n]:not([data-i18n-attr])");
+const languageButtons = document.querySelectorAll(".lang-button");
+const textTargets = document.querySelectorAll("[data-i18n]");
 const attrTargets = document.querySelectorAll("[data-i18n-attr]");
 const defaultLanguage = "en";
 const savedLanguage = localStorage.getItem("site-language");
@@ -240,10 +227,6 @@ const setLanguage = (language) => {
     const isActive = button.dataset.lang === language;
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
-  }
-
-  if (languageSwitcher) {
-    languageSwitcher.dataset.activeLang = language;
   }
 };
 
