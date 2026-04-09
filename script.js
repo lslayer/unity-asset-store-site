@@ -82,6 +82,7 @@ const translations = {
     brandAria: "Gnarled Vole homepage",
     brandKicker: "Unity Asset Studio",
     navAria: "Primary navigation",
+    langLabel: "Lang",
     langSwitcherAria: "Language switcher",
     navAbout: "About",
     navKits: "Asset Kits",
@@ -143,6 +144,7 @@ const translations = {
     brandAria: "Головна сторінка Gnarled Vole",
     brandKicker: "Студія асетів Unity",
     navAria: "Основна навігація",
+    langLabel: "Мова",
     langSwitcherAria: "Перемикач мови",
     navAbout: "Про студію",
     navKits: "Паки",
@@ -204,7 +206,9 @@ const textTargets = document.querySelectorAll("[data-i18n]:not([data-i18n-attr])
 const attrTargets = document.querySelectorAll("[data-i18n-attr]");
 const defaultLanguage = "en";
 const savedLanguage = localStorage.getItem("site-language");
-const initialLanguage = savedLanguage && translations[savedLanguage] ? savedLanguage : defaultLanguage;
+const browserLanguage = (navigator.language || "").toLowerCase();
+const autoLanguage = browserLanguage.startsWith("uk") ? "uk" : defaultLanguage;
+const initialLanguage = savedLanguage && translations[savedLanguage] ? savedLanguage : autoLanguage;
 
 const setLanguage = (language) => {
   const dictionary = translations[language];
