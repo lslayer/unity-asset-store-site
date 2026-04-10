@@ -1,7 +1,7 @@
 # AGENTS hand-off: unity-asset-store-site
 
 ## Project intent
-- Static landing page for studio `Gnarled Vole`.
+- Static landing page for studio `Gutsy vole`.
 - Studio focus: 3D assets for Unity Asset Store.
 - Current truthful product state:
   - Only one announced pack: `Pirate Island Pack`.

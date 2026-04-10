@@ -76,10 +76,10 @@ if (!reducedMotionQuery.matches && (parallaxTargets.length > 0 || pageParallaxTa
 
 const translations = {
   en: {
-    pageTitle: "Gnarled Vole | 3D Assets for Unity",
+    pageTitle: "Gutsy vole | 3D Assets for Unity",
     metaDescription:
-      "Gnarled Vole creates stylized 3D assets for Unity Asset Store publishers and developers.",
-    brandAria: "Gnarled Vole homepage",
+      "Gutsy vole creates stylized 3D assets for Unity Asset Store publishers and developers.",
+    brandAria: "Gutsy vole homepage",
     brandKicker: "Unity Asset Studio",
     navAria: "Primary navigation",
     langLabel: "Lang",
@@ -89,7 +89,7 @@ const translations = {
     navWorkflow: "Workflow",
     navContact: "Contact",
     heroEyebrow: "3D assets for Unity Asset Store",
-    heroTitle: "Gnarled Vole is building stylized 3D assets for Unity.",
+    heroTitle: "Gutsy vole is building stylized 3D assets for Unity.",
     heroText:
       "The studio is currently working on its first pack for release on the Unity Asset Store.",
     heroPrimaryCta: "See current pack",
@@ -110,7 +110,7 @@ const translations = {
     aboutEyebrow: "About the studio",
     aboutTitle: "Simple studio page, focused on what actually exists today.",
     aboutCard1Title: "What it is",
-    aboutCard1Text: "Gnarled Vole is a small studio making 3D assets for the Unity Asset Store.",
+    aboutCard1Text: "Gutsy vole is a small studio making 3D assets for the Unity Asset Store.",
     aboutCard2Title: "What is happening now",
     aboutCard2Text:
       "The first product is currently in development and has not been released yet.",
@@ -126,22 +126,22 @@ const translations = {
     workflowEyebrow: "Current focus",
     workflowTitle: "Only the present state, without fake catalogue content.",
     workflowStep1Title: "Studio",
-    workflowStep1Text: "Gnarled Vole is a studio creating content for Unity Asset Store.",
+    workflowStep1Text: "Gutsy vole is a studio creating content for Unity Asset Store.",
     workflowStep2Title: "Pack",
     workflowStep2Text: "The only announced pack right now is Pirate Island Pack.",
     workflowStep3Title: "Status",
     workflowStep3Text: "The release is still ahead, and more information will appear over time.",
-    footerEyebrow: "Gnarled Vole",
+    footerEyebrow: "Gutsy vole",
     footerTitle: "Pirate Island Pack is currently in progress.",
     footerText:
       "When the pack is released, this page will be expanded with real screenshots, links, and product details.",
     footerCta: "Open Unity Asset Store",
   },
   uk: {
-    pageTitle: "Gnarled Vole | 3D-асети для Unity",
+    pageTitle: "Gutsy vole | 3D-асети для Unity",
     metaDescription:
-      "Gnarled Vole створює стилізовані 3D-асети для видавців і розробників Unity Asset Store.",
-    brandAria: "Головна сторінка Gnarled Vole",
+      "Gutsy vole створює стилізовані 3D-асети для видавців і розробників Unity Asset Store.",
+    brandAria: "Головна сторінка Gutsy vole",
     brandKicker: "Студія асетів Unity",
     navAria: "Основна навігація",
     langLabel: "Мова",
@@ -151,7 +151,7 @@ const translations = {
     navWorkflow: "Фокус",
     navContact: "Контакти",
     heroEyebrow: "3D-асети для Unity Asset Store",
-    heroTitle: "Gnarled Vole створює стилізовані 3D-асети для Unity.",
+    heroTitle: "Gutsy vole створює стилізовані 3D-асети для Unity.",
     heroText:
       "Зараз студія працює над своїм першим паком для майбутнього релізу в Unity Asset Store.",
     heroPrimaryCta: "Поточний пак",
@@ -172,7 +172,7 @@ const translations = {
     aboutEyebrow: "Про студію",
     aboutTitle: "Проста сторінка студії, з фокусом на тому, що реально існує зараз.",
     aboutCard1Title: "Що це",
-    aboutCard1Text: "Gnarled Vole — невелика студія, що створює 3D-асети для Unity Asset Store.",
+    aboutCard1Text: "Gutsy vole — невелика студія, що створює 3D-асети для Unity Asset Store.",
     aboutCard2Title: "Що відбувається зараз",
     aboutCard2Text: "Перший продукт зараз у розробці та ще не опублікований.",
     aboutCard3Title: "Для чого ця сторінка",
@@ -187,12 +187,12 @@ const translations = {
     workflowEyebrow: "Поточний фокус",
     workflowTitle: "Лише поточний стан, без вигаданого каталогу.",
     workflowStep1Title: "Студія",
-    workflowStep1Text: "Gnarled Vole — студія, що створює контент для Unity Asset Store.",
+    workflowStep1Text: "Gutsy vole — студія, що створює контент для Unity Asset Store.",
     workflowStep2Title: "Пак",
     workflowStep2Text: "Єдиний анонсований пак зараз — Pirate Island Pack.",
     workflowStep3Title: "Статус",
     workflowStep3Text: "Реліз ще попереду, інформація зʼявлятиметься з часом.",
-    footerEyebrow: "Gnarled Vole",
+    footerEyebrow: "Gutsy vole",
     footerTitle: "Pirate Island Pack зараз у розробці.",
     footerText:
       "Коли пак вийде, цю сторінку буде розширено реальними скриншотами, посиланнями та деталями продукту.",
