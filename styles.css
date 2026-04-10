@@ -159,15 +159,7 @@ body::before {
 .lang-switcher-wrap {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-}
-
-.lang-switcher-label {
-  color: #ffb276;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  gap: 0;
 }
 
 .lang-switcher {
